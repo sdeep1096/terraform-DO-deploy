@@ -11,5 +11,5 @@ variable "do_token" {}
 #variable "pvt_key" {}
 
 provider "digitalocean" {
-  token = getenv("DO_token")
+  token = var.do_token
 }
